@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Kelionių užklausa | LugoTravel</title>
+</head>
+<body>
+   <header>
+        <ol>
+            <img src="Images/logo.png" height="50px" width="50px">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="blog.html">Blog</a>
+            <a href="#">Užklausos</a>
+        </ol>
+   </header>
+<section>
+   <form action="index.html">
+      <label for="name">Vardas</label>
+      <input type="text" id="name" name="name" placeholder="Vardas" required><br>
+
+      <label for="email">El. paštas</label>
+      <input type="email" id="email" name="email" placeholder="El. paštas" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="pavyzdys@elpastas.lt"><br>
+
+      <label for="tel">Telefonas</label>
+      <input type="tel" id="tel" name="tel" placeholder="+37012345678" required minlength="12" maxlength="12" title="+37012345678"><br>
+    
+      <label for="klausimas">Kur norite keliauti:</label>
+      <select name="klausimas" id="klausimas">
+        <option value="malta">Malta</option>
+        <option value="egiptas">Egiptas</option>
+        <option value="ispanija">Ispanija</option>
+        <option value="Turkija">Turkija</option>
+        <option value="norvegija">Norvegija</option>
+        <option value="islandija">Islandija</option>
+      </select><br>
+
+      <p>Kiek asmenų planuoja vykti?</p>
+      <input type="radio" id="vienas" name="count" value="1" checked>
+      <label for="vienas">1</label>
+      <input type="radio" id="du" name="count" value="2">
+      <label for="du">2</label>
+      <input type="radio" id="trys" name="count" value="3">
+      <label for="trys">3</label>
+      <input type="radio" id="keturiplus" name="count" value="4+">
+      <label for="keturiplus">4+</label><br>
+      
+      <label for="date">Kelionės data:</label>
+      <input type="date" id="date" name="date"><br>
+      <label for="more">Turite klausimų ar pageidavimų?</label><br>
+      <textarea id="more" name="more" placeholder="Jūsų tekstas"></textarea><br>
+
+      <input type="checkbox" id="verify" name="verify" value="Verify">
+      <label for="verify"> Patvirtinu, jog ši informacija yra teisinga</label><br>
+      <input type="checkbox" id="terms" name="terms" value="Terms" required>
+      <label for="terms"> Susipažinau su jūsų <a href="#">taisyklėmis</a> ir <a href="#">privatumo politika</a></label><br>
+      <input type="checkbox" id="news" name="news" value="News">
+      <label for="news"> Sutinku gauti įvairius pasiūlymus ir naujienlaiškį</label><br>
+      <input type="checkbox" id="third" name="third" value="Third">
+      <label for="third"> Sutinku, kad mano duomenys būtų tvarkomi trečiųjų šalių</label><br>
+
+
+      <input type="submit" value="Siųsti">
+   </form>
+</section>
+
+   <footer>
+        &copy; Copyright reserved 2023, Lukas Balsevičius, Laisvės al. 33 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1147.1905780713719!2d23.914830688996524!3d54.8962319856242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e72276dd555557%3A0x2bf3519be19be30c!2sKauno%20Informacini%C5%B3%20technologij%C5%B3%20mokykla!5e0!3m2!1slt!2slt!4v1695659001665!5m2!1slt!2slt" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </footer>
+</body>
+</html>
